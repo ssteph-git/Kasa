@@ -1,16 +1,13 @@
 // import Apropos from './Apropos'
 import React, { Component } from 'react';
+import Accroche from './Accroche';
 
 export default class Apropos extends Component {
 
     render() {
         return (
             <main>
-                <div className="accroche">
-
-                    <img className="image_accroche" src="./assets/accroche_apropos.png" alt="slogan du site kasa" />
-
-                </div>
+                <Accroche src="./assets/accroche_apropos.png" alt="slogan du site kasa"/>
                 <div className="argument">
                     <div className="argument_titre">
                         <p>Fiabilité</p>
