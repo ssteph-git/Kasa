@@ -1,41 +1,19 @@
 // import Apropos from './Apropos'
-import React, { Component } from 'react';
 import Accroche from './Accroche';
+import Argument from './Argument';
 
-export default class Apropos extends Component {
+const Apropos = function (props) {
 
-    render() {
         return (
             <main>
                 <Accroche src="./assets/accroche_apropos.png" alt="slogan du site kasa"/>
-                <div className="argument">
-                    <div className="argument_titre">
-                        <p>Fiabilité</p>
-                        <i className="fa-solid fa-angle-down"></i>
-                    </div>
-                    <div className="argument_details"></div>
-                </div>
-                <div className="argument">
-                    <div className="argument_titre">
-                        <p>Respect</p>
-                    </div>
-                    <div className="argument_details">
-                        <p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
-                    </div>
-                </div>
-                <div className="argument">
-                    <div className="argument_titre">
-                        <p>Service</p>
-                    </div>
-                    <div className="argument_details"></div>
-                </div>
-                <div className="argument">
-                    <div className="argument_titre">
-                        <p>Responsabilité</p>
-                    </div>
-                    <div className="argument_details"></div>
-                </div>
+                <Argument page="argumentApropos" typeClass="DescriptionApropos" titre="Fiabilité" description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."/>
+                <Argument page="argumentApropos" typeClass="DescriptionApropos" titre="Respect" description="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."/>
+                <Argument page="argumentApropos" typeClass="DescriptionApropos" titre="Service" description="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."/>
+                <Argument page="argumentApropos" typeClass="DescriptionApropos" titre="Responsabilité" description="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."/>
             </main>
         )
-    }
+    
 }
+
+export default Apropos
