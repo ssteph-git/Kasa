@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const Argument = function (props) {
 
-    const [argument_details, setArgument_details] = useState("argument_details");
+    const [argument_details, setArgument_details] = useState("argument_none");
     const [angle, setAngle] = useState("fa-solid fa-angle-down");
 
     //Gère l'ouverture et la fermeture du collape
