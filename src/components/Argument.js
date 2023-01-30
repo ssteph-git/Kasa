@@ -9,10 +9,10 @@ const Argument = function (props) {
     const collapseClick = event => {
         if (argument_details == "argument_details") {
             setArgument_details("argument_none");
-            setAngle("fa-solid fa-angle-up");
+            setAngle("fa-solid fa-angle-down");
         } else {
             setArgument_details("argument_details");
-            setAngle("fa-solid fa-angle-down");
+            setAngle("fa-solid fa-angle-up");
         }
     }
 
