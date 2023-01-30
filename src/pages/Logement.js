@@ -1,8 +1,8 @@
-import Slideshow from './Slideshow';
+import Gallery from '../components/Gallery';
 import { useParams } from "react-router";
-import Star from './Star';
-import Tags from './Tags';
-import Argument from './Argument';
+import Star from '../components/Star';
+import Tags from '../components/Tags';
+import Collapse from '../components/Collapse';
 import { useEffect, useState } from 'react';
 import Erreur from './Erreur';
 
@@ -19,7 +19,7 @@ const Logement = function ({ logements }) {
         {logement == null ? (<Erreur />) :
             (<main>
 
-                <Slideshow pictures={logement.pictures} ></Slideshow>
+                <Gallery pictures={logement.pictures} ></Gallery>
                 <div className="Denomination_total">
                     <div className="Denomination_gauche">
                         <div className="Titre">
@@ -47,8 +47,8 @@ const Logement = function ({ logements }) {
                     typeClass: class css pour la page de logement: et description d'un logement
                     titre: p html: Équipements ou Description
                     description ou equipments: données du json*/}
-                    <Argument page="argumentLogement" typeClass="DescriptionLogement" titre="Description" description={logement.description} />
-                    <Argument page="argumentLogement" titre="Équipements" equipments={logement.equipments} />
+                    <Collapse page="argumentLogement" typeClass="DescriptionLogement" titre="Description" description={logement.description} />
+                    <Collapse page="argumentLogement" titre="Équipements" equipments={logement.equipments} />
                 </div>
             </main>)}
     </>)

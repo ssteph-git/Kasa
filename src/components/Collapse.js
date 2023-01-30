@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Argument = function (props) {
+const Collapse = function (props) {
 
     const [argument_details, setArgument_details] = useState("argument_none");
     const [angle, setAngle] = useState("fa-solid fa-angle-down");
@@ -43,4 +43,4 @@ const Argument = function (props) {
     )
 }
 
-export default Argument
+export default Collapse

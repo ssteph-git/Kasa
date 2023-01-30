@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Slideshow = function ({ pictures }) {
+const Gallery = function ({ pictures }) {
     const [counter, setCounter] = useState(0);//compteur de départ de l'image
     const handleClickLeft = event => {
         if (counter != 0) {
@@ -36,4 +36,4 @@ const Slideshow = function ({ pictures }) {
         </div>
     )
 }
-export default Slideshow;
+export default Gallery;

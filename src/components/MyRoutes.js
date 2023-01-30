@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Logement from './Logement';
-import Apropos from './Apropos';
-import Accueil from './Accueil';
-import Erreur from './Erreur';
+import Logement from '../pages/Logement';
+import Apropos from '../pages/Apropos';
+import Accueil from '../pages/Accueil';
+import Erreur from '../pages/Erreur';
 import Banner from './Banner';
 import Footnote from './Footnote';
 

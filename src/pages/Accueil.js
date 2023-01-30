@@ -1,5 +1,5 @@
-import Accroche from './Accroche';
-import Location from './Location';
+import Accroche from '../components/Accroche';
+import Location from '../components/Location';
 
 const Accueil = function (props) {
 
